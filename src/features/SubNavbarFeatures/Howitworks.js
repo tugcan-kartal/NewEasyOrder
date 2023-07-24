@@ -129,7 +129,6 @@ const Howitworks = () => {
                     <div className='text-red-600 text-xl font-bold'>{t("Dominate the Online Market with SambaPOS -howitworks")}</div>
                     <div>
                         <div className='text-2xl font-bold'>{t("Create Your Own Branded Online Ordering System -howitworks")}</div>
-                        <div className='text-2xl font-semibold'>{t("Designed for You and Your Customer -howitworks")}</div>
                     </div>
                     <div>
                         {t("Tailored to Meet Your Needs and Delight Your Customers With SambaPOS, you can establish your own branded ordering app and webpage, allowing you to forge a strong connection with your community. Customers will effortlessly discover your online presence, access essential business information, and seamlessly place orders from any device. Enhance your visibility on Google, surpassing competitors, and effortlessly attract new customers to your business. SambaPOS ensures that this goal is easily achieved. Ultimately, your loyal customers will have your app in their pocket, enabling you to engage them with highly relevant and personalized offerings. -howitworks")}

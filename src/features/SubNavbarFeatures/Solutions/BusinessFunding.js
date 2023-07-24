@@ -6,8 +6,10 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const BusinessFunding = () => {
+    const { t } = useTranslation();
 
     const [selectedImages, setSelectedImages] = useState([]);
 
@@ -29,13 +31,10 @@ const BusinessFunding = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] pt-[15vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh]'>
-                <div className='text-red-600 text-4xl font-bold'>Give your business a boost.</div>
-                <div className='text-xl font-bold'>Get fast, flexible funding on your terms.</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Give your business a boost. -businessfunding")}</div>
+                <div className='text-xl font-bold'>{t("Get fast, flexible funding on your terms. -businessfunding")}</div>
                 <div>
-                    From expanding your business to building up your inventory. 
-                    Business funding is there to help you get to the next level. 
-                    We have partnered with YouLend to offer you flexible funding that’s repaid as a fixed percentage of your daily sales revenues. 
-                    If you’ve had a bumper month, you’ll pay a little more. And if it’s quiet, you’ll pay a little less. Built with your business in mind.
+                    {t("From expanding your business to building up your inventory. Business funding is there to help you get to the next level. We have partnered with YouLend to offer you flexible funding that’s repaid as a fixed percentage of your daily sales revenues. If you’ve had a bumper month, you’ll pay a little more. And if it’s quiet, you’ll pay a little less. Built with your business in mind.")}
                 </div>
             </div>
 
@@ -50,13 +49,10 @@ const BusinessFunding = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] py-[10vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh] md:order-1'>
-                <div className='text-red-600 text-4xl font-bold'>Take control of your business.</div>
-                <div className='text-xl font-bold'>Have grand plans but need the funding to match?  Wanting to add new equipment to your business? Looking to update your location? Look no further.</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Take control of your business. -businessfunding")}</div>
+                <div className='text-xl font-bold'>{t("Have grand plans but need the funding to match?  Wanting to add new equipment to your business? Looking to update your location? Look no further.-businessfunding")}</div>
                 <div>
-                    SambaPOS is a service provider, offering support to restaurants, bars, 
-                    nightclubs and cafes. We fulfill our customers’ needs and furnish them with 
-                    the best solutions. If you want to avail the SambaPOS V5 Pro for your bar or 
-                    nightclub, click here, or become a reseller!
+                    {t("SambaPOS is a service provider, offering support to restaurants, bars, nightclubs and cafes. We fulfill our customers’ needs and furnish them with the best solutions. If you want to avail the SambaPOS V5 Pro for your bar or nightclub, click here, or become a reseller!-businessfunding")}
                 </div>
             </div>
 
@@ -73,8 +69,8 @@ const BusinessFunding = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -businessfunding")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -businessfunding")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>
