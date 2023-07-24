@@ -1,0 +1,170 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Çoğu sayfada aşağıdan yukarıya sayfaları animasyonlu şekilde çıkaran animasyon kodları */
+
+.slide-up-enter {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  .slide-up-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 3000ms, transform 3000ms;
+  }
+  
+  .fade-enter {
+    opacity: 0;
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transition: opacity 3000ms;
+  }
+  
+  .slide-up-enter {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  
+  .slide-up-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 3000ms, transform 3000ms;
+  }
+  
+  .slide-up-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .slide-up-exit-active {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 3000ms, transform 3000ms;
+  }
+  
+
+/* Navbardaki products dropdown menü kodları */
+
+.dropdown-content {
+  position: absolute;
+  display: none;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+  padding: 1rem;
+  top: 11vh;
+  left: 10vw;
+}
+
+.dropdown:hover .dropdown-content {
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  transform: translateY(0);
+  animation-name: slidedown;
+  animation-duration: 0.5s;
+}
+
+@keyframes slidedown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Navbardaki restaurant type dropdown menü kodları */
+
+.dropdown-content2 {
+  position: absolute;
+  display: none;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+  top: 15vh;
+  right: 9.5vw;
+}
+
+.dropdown2:hover .dropdown-content2 {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(0);
+  animation-name: slidedown2;
+  animation-duration: 1s;
+}
+
+@keyframes slidedown2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Navbardaki solutions type dropdown menü kodları */
+
+.dropdown-content3 {
+  position: absolute;
+  display: none;
+  gap: 0.5rem;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s;
+  top: 15vh;
+  right: 18vw;
+}
+
+.dropdown3:hover .dropdown-content3 {
+  display: flex;
+  flex-direction: column;
+  opacity: 1;
+  transform: translateY(0);
+  animation-name: slidedown3;
+  animation-duration: 1s;
+}
+
+@keyframes slidedown3 {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Spinner kodları animasyonu */
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top-color: #e06817;
+  animation: spinner-rotate 1s infinite linear;
+}
+
+@keyframes spinner-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
