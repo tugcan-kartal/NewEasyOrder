@@ -6,8 +6,11 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const QuickService = () => {
+    const { t } = useTranslation();
+
     const [selectedImages, setSelectedImages] = useState([]);
 
     function changeOpacity(imageId) {
@@ -28,12 +31,10 @@ const QuickService = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] pt-[15vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh]'>
-                <div className='text-red-600 text-4xl font-bold'>SambaPOS – Quick Service</div>
-                <div className='text-xl font-bold'>All-in-One Solution for Quick Service Restaurants</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("SambaPOS – Quick Service -quickservicesolutions")}</div>
+                <div className='text-xl font-bold'>{t("All-in-One Solution for Quick Service Restaurants -quickservicesolutions")}</div>
                 <div>
-                    Stand out from the competition and ensure speedy service for your customers. 
-                    With SambaPOS for quick service restaurants and cafes, 
-                    you can keep the line moving and ensure perfection and accuracy in orders.
+                    {t("Stand out from the competition and ensure speedy service for your customers. With SambaPOS for quick service restaurants and cafes, you can keep the line moving and ensure perfection and accuracy in orders. -quickservicesolutions")}
                 </div>
             </div>
 
@@ -48,12 +49,10 @@ const QuickService = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] py-[10vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh] md:order-1'>
-                <div className='text-red-600 text-4xl font-bold'>Quick Service</div>
-                <div className='text-xl font-bold'>SambaPOS Value – Quick Service Processes</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Quick Service -quickservicesolutions")}</div>
+                <div className='text-xl font-bold'>{t("SambaPOS Value – Quick Service Processes -quickservicesolutions")}</div>
                 <div>
-                    SambaPOS was started in the year 2011 and now provides solutions to clients from all over the world. 
-                    Experience the magic of automation for orders, billing, kitchen display, and customer queue management. 
-                    If you would like to enable SambaPOS V5 for your quick service, buy now or click here to partner with us!
+                    {t("SambaPOS was started in the year 2011 and now provides solutions to clients from all over the world. Experience the magic of automation for orders, billing, kitchen display, and customer queue management. If you would like to enable SambaPOS V5 for your quick service, buy now or click here to partner with us! -quickservicesolutions")}
                 </div>
             </div>
 
@@ -70,8 +69,8 @@ const QuickService = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -quickservicesolutions")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -quickservicesolutions")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>

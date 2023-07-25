@@ -6,8 +6,12 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const Integrations = () => {
+
+    const { t } = useTranslation();
+
     const [selectedImages, setSelectedImages] = useState([]);
 
     function changeOpacity(imageId) {
@@ -28,12 +32,10 @@ const Integrations = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] pt-[15vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh]'>
-                <div className='text-red-600 text-4xl font-bold'>Integrations</div>
-                <div className='text-xl font-bold'>SambaPOS assist to maximize the power of your POS with integration solutions</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Integrations -integrationssolutions")}</div>
+                <div className='text-xl font-bold'>{t("SambaPOS assist to maximize the power of your POS with integration solutions -integrationssolutions")}</div>
                 <div>
-                    As a restaurant business, you need a streamlined and integrated POS solution 
-                    that allows you to process sales, transactions, inventory, customer base and more. 
-                    To thrive in an age of disruption and digitalization, choose SambaPOS to propel your business to the next level!
+                    {t("As a restaurant business, you need a streamlined and integrated POS solution that allows you to process sales, transactions, inventory, customer base and more. To thrive in an age of disruption and digitalization, choose SambaPOS to propel your business to the next level! -integrationssolutions")}
                 </div>
             </div>
 
@@ -48,10 +50,10 @@ const Integrations = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] py-[10vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh] md:order-1'>
-                <div className='text-red-600 text-4xl font-bold'>Integrations</div>
-                <div className='text-xl font-bold'>SambaPOS Integrations – Catering to Modern Restaurants</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Integrations -integrationssolutions")}</div>
+                <div className='text-xl font-bold'>{t("SambaPOS Integrations – Catering to Modern Restaurants -integrationssolutions")}</div>
                 <div>
-                    SambaPOS integrations were designed to grow up your business. Learn how we can support you. Explore the SambaPOS now.
+                    {t("SambaPOS integrations were designed to grow up your business. Learn how we can support you. Explore the SambaPOS now. -integrationssolutions")}
                 </div>
             </div>
 
@@ -68,8 +70,8 @@ const Integrations = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -integrationssolutions")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -integrationssolutions")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>

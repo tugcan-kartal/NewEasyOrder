@@ -6,6 +6,7 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const DriveThruUPOS = () => {
     const [selectedImages, setSelectedImages] = useState([]);
@@ -22,19 +23,19 @@ const DriveThruUPOS = () => {
 
         setSelectedImages(updatedSelection);
     }
+
+    const { t } = useTranslation();
+
   return (
     <div>
 
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] pt-[15vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh]'>
-                <div className='text-red-600 text-4xl font-bold'>Drive Thru POS</div>
-                <div className='text-xl font-bold'>SambaPOS for Drive Thru Restaurants – Impeccable Solution for Orders and More</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Drive Thru POS -drivethrupos")}</div>
+                <div className='text-xl font-bold'>{t("SambaPOS for Drive Thru Restaurants – Impeccable Solution for Orders and More -drivethrupos")}</div>
                 <div>
-                    The Drive Thru restaurant experience involves multiple stages and needs innovation 
-                    each and every step of the way. That means a fully integrated POS system is the route to success. 
-                    With SambaPOS, you can connect your drive thru service, back office, and kitchen operations. 
-                    Get started with SambaPOS today and work with the most secure and beneficial software platform!
+                    {t("The Drive Thru restaurant experience involves multiple stages and needs innovation each and every step of the way. That means a fully integrated POS system is the route to success. With SambaPOS, you can connect your drive thru service, back office, and kitchen operations. Get started with SambaPOS today and work with the most secure and beneficial software platform! -drivethrupos")}
                 </div>
             </div>
 
@@ -49,11 +50,10 @@ const DriveThruUPOS = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] py-[10vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh] md:order-1'>
-                <div className='text-red-600 text-4xl font-bold'>Drive Thru POS</div>
-                <div className='text-xl font-bold'>Buy the Best Point-Of-Sale Integrated System for Your Drive Thru POS</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Drive Thru POS -drivethrupos")}</div>
+                <div className='text-xl font-bold'>{t("Buy the Best Point-Of-Sale Integrated System for Your Drive Thru POS -drivethrupos")}</div>
                 <div>
-                    The latest version of SambaPOS software, “V5”, offers innovative features such as customization, advanced reporting through integration, 
-                    process tracking, billing operations, loyalty programs, etc. Buy the license here, or become a reseller.
+                    {t("The latest version of SambaPOS software, “V5”, offers innovative features such as customization, advanced reporting through integration, process tracking, billing operations, loyalty programs, etc. Buy the license here, or become a reseller. -drivethrupos")}
                 </div>
             </div>
 
@@ -70,8 +70,8 @@ const DriveThruUPOS = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -drivethrupos")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -drivethrupos")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>

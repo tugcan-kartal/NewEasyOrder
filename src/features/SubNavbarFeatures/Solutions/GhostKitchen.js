@@ -6,8 +6,12 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const GhostKitchen = () => {
+
+    const { t } = useTranslation();
+
     const [selectedImages, setSelectedImages] = useState([]);
 
     function changeOpacity(imageId) {
@@ -28,13 +32,10 @@ const GhostKitchen = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] pt-[15vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh]'>
-                <div className='text-red-600 text-4xl font-bold'>SambaPOS – Ghost Kitchen</div>
-                <div className='text-xl font-bold'>Launch your ghost kitchen and virtual restaurant with the power of SambaPOS!</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("SambaPOS – Ghost Kitchen -ghostsection")}</div>
+                <div className='text-xl font-bold'>{t("Launch your ghost kitchen and virtual restaurant with the power of SambaPOS!")}</div>
                 <div>
-                    Ghost kitchens are becoming a growing trend in the hospitality industry. 
-                    Are you ready to take on the challenge of managing one? With delivery, takeaway, and 
-                    order-ahead options chosen by many customers, you need to have a comprehensive solution to manage them all. 
-                    SambaPOS can help you automate tasks, fulfil all orders, and increase sales with minimum effort, leaving you with more time to scale your business.
+                    {t("Ghost kitchens are becoming a growing trend in the hospitality industry. Are you ready to take on the challenge of managing one? With delivery, takeaway, and order-ahead options chosen by many customers, you need to have a comprehensive solution to manage them all. SambaPOS can help you automate tasks, fulfil all orders, and increase sales with minimum effort, leaving you with more time to scale your business. -ghostsection")}
                 </div>
             </div>
 
@@ -49,12 +50,10 @@ const GhostKitchen = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] py-[10vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh] md:order-1'>
-                <div className='text-red-600 text-4xl font-bold'>Ghost Kithcen</div>
-                <div className='text-xl font-bold'>Built for Success</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Ghost Kithcen -ghostsection")}</div>
+                <div className='text-xl font-bold'>{t("Built for Success -ghostsection")}</div>
                 <div>
-                    Set up the ghost kitchen of your dreams. 
-                    SambaPOS comes with features for ordering, delivery, kitchen display, menu management, and more. 
-                    Get dedicated support with our forum and knowledge base. Buy your SambaPOS license or become a part of our reseller team today!
+                    {t("Set up the ghost kitchen of your dreams. SambaPOS comes with features for ordering, delivery, kitchen display, menu management, and more. Get dedicated support with our forum and knowledge base. Buy your SambaPOS license or become a part of our reseller team today! -ghostsection")}
                 </div>
             </div>
 
@@ -71,8 +70,8 @@ const GhostKitchen = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -ghostsection")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -ghostsection")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>

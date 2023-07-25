@@ -6,8 +6,12 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const TableService = () => {
+
+    const { t } = useTranslation();
+
     const [selectedImages, setSelectedImages] = useState([]);
 
     function changeOpacity(imageId) {
@@ -28,12 +32,10 @@ const TableService = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] pt-[15vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh]'>
-                <div className='text-red-600 text-4xl font-bold'>Table Service by SambaPOS</div>
-                <div className='text-xl font-bold'>A Table Service Restaurant POS Designed for Efficiency and Great Customer Experience</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Table Service by SambaPOS -tableservice")}</div>
+                <div className='text-xl font-bold'>{t("A Table Service Restaurant POS Designed for Efficiency and Great Customer Experience -tableservice")}</div>
                 <div>
-                    Ensure that you exceed your customers’ expectations
-                    Effectively manage your wait staff and kitchen
-                    Expedite service without compromising on quality
+                    {t("Ensure that you exceed your customers’ expectations Effectively manage your wait staff and kitchen Expedite service without compromising on quality -tableservice")}
                 </div>
             </div>
 
@@ -48,10 +50,10 @@ const TableService = () => {
         <div className='flex md:flex-row flex-col justify-center items-center gap-x-[5vw] gap-y-[5vh] py-[10vh]'>
 
             <div className='md:w-[40vw] w-[90vw] flex flex-col justify-center gap-y-[2vh] md:order-1'>
-                <div className='text-red-600 text-4xl font-bold'>Delivery</div>
-                <div className='text-xl font-bold'>Delivery Made Easy with SambaPOS</div>
+                <div className='text-red-600 text-4xl font-bold'>{t("Delivery -tableservice")}</div>
+                <div className='text-xl font-bold'>{t("Delivery Made Easy with SambaPOS -tableservice")}</div>
                 <div>
-                    Enhance customer experience and build your delivery business with this delivery POS software. Buy SambaPOS and never miss an order again.
+                    {t("Enhance customer experience and build your delivery business with this delivery POS software. Buy SambaPOS and never miss an order again. -tableservice")}
                 </div>
             </div>
 
@@ -68,8 +70,8 @@ const TableService = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -tableservice")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -tableservice")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>

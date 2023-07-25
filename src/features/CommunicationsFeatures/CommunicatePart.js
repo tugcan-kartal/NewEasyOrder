@@ -77,7 +77,7 @@ const CommunicatePart = () => {
         ) : (
           <div className="fixed md:w-[5vw] w-[15vw] md:bottom-[6vh] bottom-[12vh] md:left-[3vw] left-[2vw] hover:opacity-80">
             <Link to="#" onClick={handleButtonClick}>
-              <img className='' src={CommentImage} alt='' />
+              <img className='' src={""} alt='' />
             </Link>
           </div>
         )}
