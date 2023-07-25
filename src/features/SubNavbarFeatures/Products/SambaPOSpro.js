@@ -5,8 +5,12 @@ import EasyButlerImage from "../../../static/eco-easybutler.png";
 import EasyKioskImage from "../../../static/eco-easykiosk.png";
 import EasyLoyaltyImage from "../../../static/eco-easyloyalty.png";
 import EasyReservation from "../../../static/eco-easyreservation.png";
+import { useTranslation } from "react-i18next";
 
 const SambaPOSpro = () => {
+  
+  const { t } = useTranslation();
+
   const [selectedImages, setSelectedImages] = useState([]);
 
   function changeOpacity(imageId) {
@@ -43,15 +47,15 @@ const SambaPOSpro = () => {
             <div className='flex md:flex-row flex-col justify-center items-center gap-x-[10vw] gap-y-[10vh] px-[10vw]'>
                 <div className='md:w-[40vw] flex flex-col gap-y-[3vh]'>
                     <div className='md:text-5xl text-3xl text-red-600 font-bold'>
-                        Build your Restaurant Business with SambaPOS V5 Pro
+                        {t("Build your Restaurant Business with SambaPOS V5 Pro -sambasproproducts")}
                     </div>
 
                     <div className='text-xl text-blue-900 font-semibold'>
-                        SambaPOS V5 Pro is the perfect hospitality solution for your business.
+                        {t("SambaPOS V5 Pro is the perfect hospitality solution for your business. -sambasproproducts")}
                     </div>
 
                     <div className='font-thin text-blue-900'>
-                        It is an all-in-one platform that will assist you to manage every aspect of your restaurant, from taking orders to managing inventory and more. Personalize it to suit your brand and style.
+                        {t("It is an all-in-one platform that will assist you to manage every aspect of your restaurant, from taking orders to managing inventory and more. Personalize it to suit your brand and style. -sambasproproducts")}
                     </div>
                 </div>
 
@@ -62,8 +66,8 @@ const SambaPOSpro = () => {
 
             <div className='flex md:flex-row flex-col gap-x-[10vw] gap-y-[5vh] mx-[5vw]'>
                 <div className='flex flex-col gap-y-[4vh] bg-gray-200 text-blue-900 rounded-xl md:w-[20vw] w-[90vw] py-[3vh] md:ml-[4vw] text-center'>
-                    <div  className='font-bold'>Download and Try for FREE</div>
-                    <div onClick={handleDownloadClick} className='border-[1px] border-blue-900 md:w-[10vw] w-[40vw] rounded-2xl py-[1vh] mx-auto hover:bg-blue-900 hover:text-white transition-all duration-500 cursor-pointer'><span className='font-bold'>+</span> DOWNLOAD</div>
+                    <div  className='font-bold'>{t("Download and Try for FREE -sambasproproducts")}</div>
+                    <div onClick={handleDownloadClick} className='border-[1px] border-blue-900 md:w-[10vw] w-[40vw] rounded-2xl py-[1vh] mx-auto hover:bg-blue-900 hover:text-white transition-all duration-500 cursor-pointer'><span className='font-bold'>+</span> {t("DOWNLOAD -sambasproproducts")}</div>
                 </div>
 
                 {/* <div className='flex flex-col gap-y-[4vh] bg-white text-blue-900 rounded-xl md:w-[20vw] w-[90vw] py-[3vh] text-center'>
@@ -84,11 +88,11 @@ const SambaPOSpro = () => {
 
                 <div className='w-[80vw] md:w-[35vw] flex flex-col justify-center gap-y-[5vh]'>
                     <div className='text-blue-800 font-bold text-3xl'>
-                        SambaPOS V5 Pro Digitally Transforms Your Restaurant
+                    {t("SambaPOS V5 Pro Digitally Transforms Your Restaurant -sambasproproducts")}
                     </div>
 
                     <div>
-                        The world is becoming digital, and so is restaurant management. With SambaPOS, you can integrate all your business processes and manage your restaurant with a simple interface. We have not only included the basic features but have also developed value-added services for all types of restaurants. Experience the benefits of SambaPOS today.
+                    {t("The world is becoming digital, and so is restaurant management. With SambaPOS, you can integrate all your business processes and manage your restaurant with a simple interface. We have not only included the basic features but have also developed value-added services for all types of restaurants. Experience the benefits of SambaPOS today. -sambasproproducts")}
                     </div>
                 </div>
 
@@ -96,22 +100,22 @@ const SambaPOSpro = () => {
                 <div className='w-[80vw] md:w-[30vw]'>
                     <div>
                         <div className='bg-blue-900 text-white py-[2vh] flex flex-col items-center gap-y-[1vh]'>
-                            <span className='text-xl font-bold'>SambaPOS V5 Pro </span>
+                            <span className='text-xl font-bold'>{t("SambaPOS V5 Pro -sambasproproducts")}</span>
                             <span className='text-3xl font-semibold'>$249</span>
-                            <span>One Time Payment </span>
+                            <span>{t("One Time Payment -sambasproproducts")}</span>
                         </div>
 
                         <div className='bg-white flex flex-col items-center gap-y-[2vh] py-[5vh] font-extralight text-center'>
-                            <div>Lifetime License</div>
-                            <div>Multiple Terminal Usage</div>
-                            <div>Table Service Management</div>
-                            <div>Delivery Service Management</div>
-                            <div>Custom Reports and Data Analytics</div>
-                            <div>Inventory, Sales, and Cost Tracking System</div>
+                            <div>{t("Lifetime License -sambasproproducts")}</div>
+                            <div>{t("Multiple Terminal Usage -sambasproproducts")}</div>
+                            <div>{t("Table Service Management -sambasproproducts")}</div>
+                            <div>{t("Delivery Service Management -sambasproproducts")}</div>
+                            <div>{t("Custom Reports and Data Analytics -sambasproproducts")}</div>
+                            <div>{t("Inventory, Sales, and Cost Tracking System -sambasproproducts")}</div>
                             <div>-</div>
-                            <div>* Customize it As Per Your Needs</div>
-                            <div>* Requirements: Windows 10 or higher Operating System</div>
-                            <button className='mx-auto bg-blue-900 text-white py-[1vh] px-[2vw] mt-[2vh] rounded-lg hover:bg-blue-500 hover:text-white'>BUY NOW</button>
+                            <div>* {t("Customize it As Per Your Needs -sambasproproducts")}</div>
+                            <div>* {t("Requirements: Windows 10 or higher Operating System -sambasproproducts")}</div>
+                            <button className='mx-auto bg-blue-900 text-white py-[1vh] px-[2vw] mt-[2vh] rounded-lg hover:bg-blue-500 hover:text-white'>{t("BUY NOW -sambasproproducts")}</button>
                         </div>
 
                     </div>
@@ -125,8 +129,8 @@ const SambaPOSpro = () => {
             <div className='flex flex-col gap-y-[5vh] z-10 absolute top-[10vh] left-5'>
 
                 <div>
-                    <div className='text-red-600 text-2xl font-bold'>Make it omnichannel</div>
-                    <div className='text-4xl font-bold text-gray-800'>Discover our ecosystem</div>
+                    <div className='text-red-600 text-2xl font-bold'>{t("Make it omnichannel -sambasproproducts")}</div>
+                    <div className='text-4xl font-bold text-gray-800'>{t("Discover our ecosystem -sambasproproducts")}</div>
                 </div>
 
                 <div className='flex flex-col gap-y-[3vh] z-10'>
