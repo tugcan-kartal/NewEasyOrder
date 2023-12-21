@@ -11,7 +11,7 @@ This project published by netlify [To See Project](https://6584152ccaaaa7d355ca9
 
 ### Main Purpose
 
-Build responsive,fast and stylish e-commerce website.
+Build responsive,fast and stylish website.
 
 
 
