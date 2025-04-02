@@ -40,7 +40,7 @@ const SubNavbar = () => {
             <Link to="SambaPOSpro" className='cursor-pointer hover:text-red-600 transition-all duration-300'>
               {t("Products -subnavbar")}
             </Link>
-            <div className='dropdown-content bg-gray-100 rounded-3xl mr-[20vw] z-10 mt-[4vh] font-semibold'>
+            <div className='dropdown-content bg-gray-500 rounded-3xl mr-[20vw] z-10 mt-[4vh] font-semibold'>
               <ul className='py-2 text-sm text-gray-700 dark:text-gray-200 mx-[2vw]'>
                 <li>
                   <div className='block px-4 py-2  text-blue-900 font-bold text-xl'>
